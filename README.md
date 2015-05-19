@@ -4,7 +4,7 @@ Self-educational, hello-world-level basic chat-like stdin broadcasting with akka
 # running
 Needs java 7 to run, scala/sbt to build
 
-First, in application.conf you need to edit: seed-nodes = ["akka.tcp://ChatLikeSystem@192.168.52.8:2552"] - enter ip and port you're going to use.
+First, in application.conf you need to edit: seed-nodes = ["akka.tcp://ChatLikeSystem@192.168.52.8:2552"] - enter ip and port you're going to use for seed node.
 
 To run with sbt: sbt "run [port]" (use above port for first node/JVM so you strat seed node first).
 
