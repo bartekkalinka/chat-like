@@ -17,7 +17,6 @@ object ChatLike {
 
   def main(args: Array[String]): Unit = {
     val config = getConfig(args)
-
     implicit val system = ActorSystem("ChatLikeSystem", config)
     val chatActor = system.actorOf(Props[ChatActor], name = "ChatActor")  // the local actor
 
